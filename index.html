@@ -1,0 +1,41 @@
+<head>
+
+    <meta http-equiv="content-type" content="txt/html; charset=utf-8" />
+
+    <title>Document</title>
+
+</head>
+<html>
+    <div>
+        <div class="flex tools">
+            <button class="pen">画笔</button>
+            <button class="line">画线</button>
+            <button class="rectangle">矩形</button>
+            <button class="tangle">三角形</button>
+            <button class="circle">圆</button>
+
+        </div>
+        <div class="twoCanvas">
+            <canvas id="TrueCanvas" width="600", height="600"></canvas>
+            <canvas class="isHidden" id="fakeCanvas" width="600", height="600"></canvas>
+        </div>
+    </div>
+        
+</html>
+
+<script src="main.js" type = "module"></script>
+<style>
+    canvas {
+        border: solid 2px;
+    }
+    .flex {
+        display: flex;
+    }
+    .isHidden {
+        display: none;
+    }
+    #fakeCanvas {
+        position: absolute;
+        left: 8px;
+    }
+</style>
